@@ -26,3 +26,23 @@ body {
     display: grid;
     justify-items: center;
 }
+
+.home {
+    display: grid;
+    grid-template-columns: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
+    grid-template-rows: 1fr;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.library {
+    grid-column: library-s/library-e;
+    background-color: cornflowerblue;
+
+}
+
+.schedule {
+    grid-column: schedule-s/schedule-e;
+    background-color: crimson;
+}

@@ -15,13 +15,10 @@ class LibraryCourse extends Component {
                 <Arrow className="library-course__arrow" />
                 <Action className="library-course__action" />
                 <div className="library-course__description">
-                    <label>Course Description</label>
+                    <label>{this.props.title}</label>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                        fringilla facilisis mi, non pellentesque metus consectetur vel.
-                        Quisque dictum, lectus vitae dignissim tincidunt, sapien nibh
-                        placerat diam, quis blandit enim nulla in felis.
-          </p>
+                        {this.props.description}
+                    </p>
                 </div>
             </div>
         );

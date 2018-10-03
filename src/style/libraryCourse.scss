@@ -1,8 +1,8 @@
 .library-course {
     display: grid;
-    grid-template-columns: repeat(autofit, 1fr);
-    grid-template-rows: repeat(auto-fit, 1fr);
-    background-color: cornflowerblue;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: 50px 1fr;
+    background: cornflowerblue;
 
     &__title-check {
         grid-row: 1/2;

@@ -6,6 +6,8 @@
 @import 'scheduleCourse';
 @import'progressTracker';
 @import'addRemoveAction';
+@import'gradient';
+
 html {
     font-size: 62.5%; // 1rem is 10px
 }
@@ -37,7 +39,7 @@ body {
 
 .home {
     display: grid;
-    grid-template-columns: [library-s] 1fr 1fr [library-e schedule-s] 1fr [schedule-e];
+    grid-template-columns: [library-s] 1fr 1fr [schedule-s] 50px [library-e] 1fr [schedule-e];
     grid-template-rows: 1fr;
 
     height: 100vh;
@@ -46,16 +48,4 @@ body {
 
 
 
-.schedule {
-    grid-column: schedule-s/schedule-e;
-    position: relative;
-}
 
-.gradient {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(120deg, $color-purple 0%, $color-light-blue 100%);
-    z-index: -10;
-
-}

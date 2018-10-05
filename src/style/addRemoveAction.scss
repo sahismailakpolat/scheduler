@@ -13,10 +13,12 @@
         content: '';
         display: block;
         background-color: white;
-
+        transition: all .3s ease;
         position: absolute;
         top: 50%;
         left: 50%
+        
+        
         
         
         
@@ -36,4 +38,13 @@
 
     }
 
+}
+
+.action-remove {
+    &:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:after {
+        transform: translate(-50%, -50%) rotate(-135deg);
+    }
 }
